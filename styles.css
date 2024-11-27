@@ -16,8 +16,8 @@ html {
 }
 
 a {
- /* Cela applique la couleur du parent (dans ce cas, celle du texte) */
-    text-decoration: none; /* Cela supprime le soulignement du lien si tu n'en veux pas */
+    color: #551a8b;  /* Définit la couleur du lien non cliqué */
+    text-decoration: none; /* Optionnel : retire le soulignement des liens */
 }
 
 a:hover {
