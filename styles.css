@@ -14,6 +14,16 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 a {
     color: #551a8b;  /* Définit la couleur du lien non cliqué */
@@ -80,14 +90,13 @@ footer{
     font-size: 10px; 
     font-family: Lexend Deca, sans-serif;
     position: fixed; 
+    z-index: 999;
 }
+
 
 footer h3:hover{
     text-decoration: underline;
-}
-
-footer h5{
-    margin-top: 10px;
+    z-index: 999;
 }
 
 
@@ -170,20 +179,29 @@ footer h5{
     font-size: 1vw;
     padding-bottom: 1rem;
 }
+
+
+
+
+/*IMAGES */
 .image1 {
     width: 250px;
     border: 7px solid #232826;
     border-radius: 20px;
-    margin-left: 58%;
-    bottom: 250px;
+    margin-left: 62%;
+    bottom: -20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: absolute;
-    transform: rotate(11deg)
+    transform: rotate(11deg);
+    z-index: 2;
+
 }
 
 .image1:hover {
-    transform: scale(1.2); 
+    transform: scale(2.5) translateX(35px) translateY(-80px); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+    z-index:90 ;
+
 }
 
 .image2{
@@ -191,16 +209,149 @@ footer h5{
     border: 7px solid #232826;
     border-radius: 20px;
     margin-left: 70%;
-    bottom: 200px;
+    bottom: 230px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: absolute;
-    transform: rotate(-13deg)
+    transform: rotate(-10deg);
+
 }
 
 .image2:hover {
-    transform: scale(1.2); 
+    transform: scale(2.7) translateX(-35px) translateY(30px); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+    z-index:90 ;
 }
+
+.image3{
+    width: 250px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    margin-left: 58%;
+    bottom: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    transform: rotate(-10deg);
+
+    
+}
+
+.image3:hover {
+    transform: scale(2.1) translateX(75px) translateY(40px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+    z-index:90 ;
+}
+
+.SIN{
+    width: 250px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    margin-top: 10%;
+    margin-left:11%;
+    z-index: 90;
+
+}
+
+
+.SIN:hover{
+    transform: scale(3) translateX(80px) translateY(40px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    z-index: 91;   
+}
+
+.AC{
+    width: 250px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    margin-top: 10%;
+    margin-left:33%;
+    z-index: 90;
+}
+
+.AC:hover{
+    transform: scale(3) translateX(-80px) translateY(40px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    z-index: 91;   
+}
+
+.EE{
+    width: 250px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    margin-top: 25%;
+    margin-left:33%;
+    z-index: 90;
+}
+
+.EE:hover{
+    transform: scale(3) translateX(-80px) translateY(-40px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    z-index: 91;   
+}
+
+.ITEC{
+    width: 250px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    margin-top: 25%;
+    margin-left:11%;
+    z-index: 90;
+}
+
+.ITEC:hover{
+    transform: scale(3) translateX(80px) translateY(-40px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    z-index: 91;    
+}
+
+#Texte_SIN{
+    color: #E8EACC; 
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    margin-top: 20.1%;
+    margin-left:14.5%;
+
+
+}
+#Texte_AC{
+    color: #E8EACC; 
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    margin-top: 20.1%;
+    margin-left:36.5%;
+
+
+}
+#Texte_EE{
+    color: #E8EACC; 
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    margin-top: 35.1%;
+    margin-left:14.5%;
+
+
+}
+#Texte_ITEC{
+    color: #E8EACC; 
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    margin-top: 35.1%;
+    margin-left:36.25%;
+
+
+}
+
+
+/*FIN IMAGES*/
+
+
 
 .interrogation{
     width: 400px;
@@ -299,6 +450,7 @@ footer h5{
     footer {
         font-size: 12px;
         padding: 1rem;
+        z-index: 1;
     }
 }
 
