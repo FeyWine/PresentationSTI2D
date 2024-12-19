@@ -1,5 +1,5 @@
 body{
-    background-color: #131114 ;
+    background-color: #191f26 ;
     margin: 0;
     padding-top: 80px; 
     padding-bottom: 4rem
@@ -26,7 +26,7 @@ html {
 }
 
 a {
-    color: #551a8b;  /* Définit la couleur du lien non cliqué */
+    color: #ffffff;  /* Définit la couleur du lien non cliqué */
     text-decoration: none; /* Optionnel : retire le soulignement des liens */
 }
 
@@ -35,7 +35,7 @@ a:hover {
 }
 
 nav {
-    background: black;
+    background: #2c353f;
     padding: 1rem;
     position: fixed; 
     top: 0; 
@@ -78,14 +78,14 @@ nav ul li a:hover {
 }
 
 footer{
-    background: black;  
+    background: #2c353f;  
     color: #E8EACC;                         /*color: white;*/  
     padding: 1.5rem;  
     position: fixe;
     bottom: 0px; 
     left: 0;  
     width: 100%;  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
     text-align: center; 
     font-size: 10px; 
     font-family: Lexend Deca, sans-serif;
@@ -403,107 +403,46 @@ footer h3:hover{
 }
 
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 479px) {
+
     body {
-        padding-top: 50px; /* Réduire le padding pour plus d'espace sur mobile */
+        overflow-x: hidden; /* Empêche le débordement horizontal */
     }
 
     nav ul {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .Contenu .Texte1, .Contenu .Texte3, .Contenu section p {
-        margin-left: 10%;
-        margin-right: 10%;
-        font-size: 5vw;
-    }
-
-    .image1, .image2 {
-        width: 80%;
-        max-width: 250px;
-        margin-left: 10%;
-        margin-bottom: 20px;
-    }
-    .image1:hover {
-        transform: scale(1.2); 
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-    }
-    
-    .image2:hover {
-        transform: scale(1.2); 
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-    }
-
-
-    .interrogation {
-        width: 70%;
-        max-width: 200px;
-        margin-left: 15%;
-    }
-
-    footer {
-        font-size: 12px;
-        padding: 1rem;
-        z-index: 1;
-    }
-}
-
-/* Pour les petits écrans (moins de 500px) */
-@media (max-width: 500px) {
-    body {
-        padding-top: 30px;
-    }
-
-    nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
+        font-size: 10px;
+        display:flex;
     }
 
-    nav ul li a {
+
+    .Contenu .Accueil{
+        font-size: 9px;
+    }
+
+    .Contenu .Texte1 {
+        font-size: 10px;
+    }
+
+    .Contenu h3 {
+        font-size: 10px;
+        position: relative;
+        margin-right: 10009px ;
+        /*align-items: center; */
+        width: 90%;
+
+    }
+
+    section#Images img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    #Texte_SIN, #Texte_AC, #Texte_EE, #Texte_ITEC {
         font-size: 14px;
         text-align: center;
     }
-
-    .Contenu .Accueil, .Contenu h1 {
-        font-size: 18px;
-    }
-
-    .Contenu .Texte1, .Contenu .Texte3, .Contenu section p {
-        font-size: 6vw;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .image1, .image2 {
-        width: 90%;
-        max-width: 200px;
-        margin-left: 5%;
-    }
-    .image1:hover {
-        transform: scale(1.2); 
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-    }
-    .image2:hover {
-        transform: scale(1.2); 
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-    }
-    
-
-    .interrogation {
-        width: 70%;
-        max-width: 150px;
-        margin-left: 10%;
-    }
-
-    footer {
-        font-size: 10px;
-        padding: 0.5rem;
-    }
 }
+
