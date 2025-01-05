@@ -81,7 +81,7 @@ footer{
     background: #2c353f;  
     color: #E8EACC;                         /*color: white;*/  
     padding: 1.5rem;  
-    position: fixe;
+
     bottom: 0px; 
     left: 0;  
     width: 100%;  
@@ -135,9 +135,6 @@ footer h3:hover{
     text-align: center;
 }
 
-.Contenu .Texte1:hover{
-    transform: scale(1.00);
-}
 
 .Contenu section p:not(.dernier-paragraphe-matieres) {
     color: #E8EACC; 
@@ -407,7 +404,8 @@ footer h3:hover{
 @media screen and (max-width: 479px) {
 
     body {
-        overflow-x: hidden; /* Empêche le débordement horizontal */
+        overflow-x: hidden; 
+        width: 100%;
     }
 
     nav ul {
@@ -415,34 +413,113 @@ footer h3:hover{
         align-items: center;
         font-size: 10px;
         display:flex;
+        width: 100%;
     }
 
-
-    .Contenu .Accueil{
+    .Contenu h1{ /* Gros titre */
+        margin-top: 20px;
+        width: 100%;
+        line-height: 1.4; 
+    }
+    
+    
+    .Contenu p{ /* Texte en dessous du titre */
+        margin-top: 10px;
         font-size: 9px;
+        width: 99%;
+        line-height: 1.4; 
+        
     }
+
+
+
 
     .Contenu .Texte1 {
-        font-size: 10px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        padding: 20px; 
+        text-align: center; 
+        height: auto; 
+        max-width: 600px; 
+        margin: 20px auto; 
+        box-sizing: border-box; 
+    }
+    
+    .Contenu .Texte1 h3 {
+        margin: 0; 
+        font-size: 0.5rem; 
+        line-height: 1.4; 
     }
 
-    .Contenu h3 {
+    .image1{
+        width: 250px;
+        border: 7px solid #232826;
+        border-radius: 20px;
+        margin-left: 62%;
+        bottom: -20px;
+        position: absolute;
+        z-index: 2;
+    }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    /* .Contenu h3 {
         font-size: 10px;
         position: relative;
-        margin-right: 10009px ;
-        /*align-items: center; */
+        margin-right: 10px ;
+        /*align-items: center; 
         width: 90%;
 
-    }
+    } */
 
-    section#Images img {
-        width: 50%;
-        margin-bottom: 10px;
-    }
-
-    #Texte_SIN, #Texte_AC, #Texte_EE, #Texte_ITEC {
-        font-size: 14px;
-        text-align: center;
-    }
 }
 
