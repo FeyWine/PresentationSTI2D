@@ -460,23 +460,51 @@ footer h3:hover{
     .image1{
         transform: rotate(0deg);
         margin-left: 7%;
-        margin-bottom: -12%;
+        margin-bottom: -25%;
         width: 35%;
+        position: static;
+        z-index: 50;
     }
 
     .image2{
         transform: rotate(0deg);
         margin-left: 7%;
-        margin-bottom: -120%;
+        margin-bottom: 3%;
         width: 35%;
+        position: static;
+        z-index: 50;
     }
    
     .image3{
         transform: rotate(0deg);
-        margin-left: 55%;
-        margin-bottom: -92%;
+        margin-left: 50%;
+        margin-bottom: -45%;
         width: 35%;
+        position: static;
+        z-index: 50;
     }
+
+    .image1:hover {
+        transform: scale(2.52) translateX(35px) translateY(15px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+        z-index: 99;
+        position: absolute;
+    
+    }
+    .image2:hover {
+        transform: scale(2.52) translateX(35px) translateY(15px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+        z-index: 99;
+        position: absolute;
+    
+    }
+    .image3:hover {
+        transform: scale(2.52) translateX(-23px) translateY(-10px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+        z-index: 99;
+    
+    }
+    
    
    
    
