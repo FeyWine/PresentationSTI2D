@@ -464,6 +464,7 @@ footer h3:hover{
         width: 35%;
         position: static;
         z-index: 50;
+        transform: none;
     }
 
     .image2{
@@ -473,6 +474,7 @@ footer h3:hover{
         width: 35%;
         position: static;
         z-index: 50;
+        transform: none;
     }
    
     .image3{
@@ -482,29 +484,38 @@ footer h3:hover{
         width: 35%;
         position: static;
         z-index: 50;
+        transform: none;
     }
 
     .image1:hover {
-        transform: scale(2.52) translateX(35px) translateY(15px); 
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-        z-index: 99;
-        position: absolute;
-    
+        transform: none;
+   
     }
     .image2:hover {
-        transform: scale(2.52) translateX(35px) translateY(15px); 
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-        z-index: 99;
-        position: absolute;
-    
+        transform: none;
     }
     .image3:hover {
-        transform: scale(2.52) translateX(-23px) translateY(-10px); 
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
-        z-index: 99;
-    
+        transform: none;
     }
     
+    #CkoiLesMatieres p{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        text-align: center; 
+        height: auto; 
+        max-width: 400px; 
+        box-sizing: border-box; 
+        font-size: 0.6rem;
+        line-height: 1.2;   
+        margin: 10px 0;    
+        padding: 0; 
+        margin-top: 50%;
+
+    }
    
    
    
