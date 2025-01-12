@@ -568,7 +568,6 @@ footer h3:hover{
         position: static;
         z-index: 50;
         transform: none;
-
     }
 
 
@@ -580,7 +579,6 @@ footer h3:hover{
         position: static;
         z-index: 50;
         transform: none;
-
     }
 
     .tel{
@@ -606,10 +604,8 @@ footer h3:hover{
         text-align: center !important;          
         position: relative !important;          
         z-index: 1 !important; 
-        margin-right: 17%;
-    
+        margin-right: 17%; 
     }
-
 
     .Contenu .Texte3 p {
             max-width: 600px; 
@@ -628,10 +624,6 @@ footer h3:hover{
         visibility: hidden;
 
     }
-
-
-
-
 
     .SIN:hover {
         transform: none;
@@ -657,9 +649,5 @@ footer h3:hover{
         /*align-items: center; 
         width: 90%;
 
-    } */
-
-        /* * {
-        outline: 1px solid red; 
     } */
 }
