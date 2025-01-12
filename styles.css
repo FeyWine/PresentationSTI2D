@@ -453,7 +453,8 @@ footer h3:hover{
     }
 
     .Contenu .Texte1 p {
-        font-size: 0.7rem; /* Augmente la taille du texte (valeur ajustable) */
+        font-size: 0.7rem;
+        max-width: 400px;
     }
     
     .Contenu .Texte1 h3 {
@@ -526,7 +527,7 @@ footer h3:hover{
         max-width: 300px; 
         margin: 0 auto;
         padding: 0; 
-        font-size: 0.69rem; 
+        font-size: 0.67rem; 
         line-height: 1.2; 
         overflow-wrap: break-word; 
         word-wrap: break-word;
@@ -590,55 +591,37 @@ footer h3:hover{
 
 
 
-    .Contenu .Texte3 p {
-        display:flex !important;               
-        flex-direction: column !important;      
-        justify-content: center !important;     
-        align-items: center !important;  
-        max-width: 350px;        
-        margin-top: 15%;         
-        font-size: 0.7rem !important;          
-        text-align: center !important;         
-        position: relative !important;          
-
-    }
-
-
-
-    .Contenu .Texte3 {
+    .Contenu .Texte3 {                                  /* Mais que faire après un baccalauréat STI2D ? 🤔 Les possibilités sont nombreuses ! */
         display:flex !important;              
         flex-direction: column !important;      
         justify-content: center !important;     
         align-items: center !important;  
-        max-width: 300px;            
-        margin-top: 110%;       
-        font-size: 0.9rem !important;            
+        max-width: 4000px;            
+        margin-top: 130%;                  
         text-align: center !important;          
         position: relative !important;          
-        z-index: 1 !important;                
+        z-index: 1 !important; 
+        margin-right: 15%;
+    
+    }
+
+
+    .Contenu .Texte3 p {
+            max-width: 600px; 
+            margin: 0 auto; 
+            text-align: center; 
+            color: #E8EACC; 
+            font-size: 0.69rem; 
+            font-family: Lexend Deca, sans-serif; 
     }
     
+    .Contenu .interrogation {
+        width: 50%; /* Ajuste la taille de l'image */
+        max-width: 150px; /* Taille maximale */
+        height: auto; /* Garde les proportions */
+        visibility: hidden;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 
@@ -656,51 +639,7 @@ footer h3:hover{
         transform: none;
     }
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
     /* .Contenu h3 {
         font-size: 10px;
         position: relative;
