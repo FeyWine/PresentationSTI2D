@@ -637,9 +637,6 @@ footer h3:hover{
     .ITEC:hover {
         transform: none;
     }
-    * {
-        outline: 1px solid red; 
-    }
    
 
     /* .Contenu h3 {
