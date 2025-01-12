@@ -407,6 +407,8 @@ footer h3:hover{
 
 @media screen and (max-width: 479px) {
 
+
+
     body {
         overflow-x: hidden; 
         width: 100%;
@@ -420,6 +422,9 @@ footer h3:hover{
         width: 100%;
     }
 
+    .Contenu {
+        padding-bottom: 0;
+    }
     .Contenu h1{ /* Gros titre */
         margin-top: 20px;
         width: 100%;
@@ -601,7 +606,7 @@ footer h3:hover{
         text-align: center !important;          
         position: relative !important;          
         z-index: 1 !important; 
-        margin-right: 15%;
+        margin-right: 17%;
     
     }
 
@@ -613,6 +618,7 @@ footer h3:hover{
             color: #E8EACC; 
             font-size: 0.69rem; 
             font-family: Lexend Deca, sans-serif; 
+            margin-top: -15%;
     }
     
     .Contenu .interrogation {
@@ -622,6 +628,7 @@ footer h3:hover{
         visibility: hidden;
 
     }
+
 
 
 
@@ -647,6 +654,10 @@ footer h3:hover{
         /*align-items: center; 
         width: 90%;
 
+    } */
+
+        /* * {
+        outline: 1px solid red; 
     } */
 
 }
